@@ -7,6 +7,6 @@ import com.backendV1.backendV1.entity.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-	
-	
+	boolean existsUserByUsername(String username);
+
 }

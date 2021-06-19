@@ -13,9 +13,9 @@ public final class UserViewDTO implements Serializable {
 
 	private final String firstName;
 	private final String lastName;
-	
+
 	private UserViewDTO(String firstName, String lastName) {
-		
+
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
@@ -23,8 +23,5 @@ public final class UserViewDTO implements Serializable {
 	public static UserViewDTO of(User user) {
 		return new UserViewDTO(user.getFirstName(), user.getLastName());
 	}
-
-	
-
 
 }
